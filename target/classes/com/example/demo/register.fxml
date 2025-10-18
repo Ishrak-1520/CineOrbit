@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!--<?import org.kordamp.ikonli.javafx.FontIcon?>-->
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="570.0" stylesheets="@designLogin.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.RegisterController">
+    <children>
+        <AnchorPane fx:id="SignUp_form" layoutX="1.0" prefHeight="500.0" prefWidth="570.0" styleClass="bg-form" stylesheets="@designLogin.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <VBox alignment="TOP_CENTER" layoutX="161.0" layoutY="14.0" prefHeight="472.0" prefWidth="270.0" spacing="15">
+                    <children>
+                        <ImageView fitHeight="83.0" fitWidth="114.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@avatar.png" />
+                            </image>
+                        </ImageView>
+                        <Label text="Create Account" textFill="#f4f0f0">
+                            <font>
+                                <Font name="Berlin Sans FB" size="30.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="name" prefHeight="35.0" prefWidth="248.0" promptText="Full Name" styleClass="textfield">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="SignUp_email" prefHeight="35.0" prefWidth="248.0" promptText="Email Address" styleClass="textfield">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="signUp_username" prefHeight="35.0" prefWidth="248.0" promptText="Username" styleClass="textfield">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </TextField>
+                        <PasswordField fx:id="signUp_password" prefHeight="35.0" prefWidth="248.0" promptText="Password" styleClass="textfield">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </PasswordField>
+                        <Button mnemonicParsing="false" onAction="#handleSignup" prefHeight="40.0" prefWidth="150.0" styleClass="signup-btn" text="Create Account">
+                            <font>
+                                <Font name="Microsoft Sans Serif" size="14.0" />
+                            </font>
+                        </Button>
+                        <Hyperlink onAction="#handleAlreadyAccount" styleClass="login-link" text="Already have an account? Login">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Hyperlink>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

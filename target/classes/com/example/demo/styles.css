@@ -1,0 +1,58 @@
+/* General AnchorPane styling */
+.anchor-pane {
+    -fx-background-color: linear-gradient(to bottom, #f8fafc, #e0e7ef);
+}
+
+/* VBox styling */
+.vbox {
+    -fx-alignment: top-center;
+    -fx-spacing: 20;
+}
+
+/* Label styling */
+.label-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2d3748;
+    -fx-padding: 20 0 10 0;
+}
+
+.label-bold {
+    -fx-font-weight: bold;
+    -fx-text-fill: #374151;
+}
+
+.label-value {
+    -fx-font-size: 16px;
+}
+
+.label-total {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2563eb;
+}
+
+/* GridPane styling */
+.grid-pane {
+    -fx-background-color: #fff;
+    -fx-background-radius: 12;
+    -fx-padding: 24;
+    -fx-hgap: 20;
+    -fx-vgap: 12;
+    -fx-effect: dropshadow(gaussian, #b3b3b3, 10, 0.2, 0, 2);
+}
+
+/* Button styling */
+.button {
+    -fx-background-radius: 8;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.button-print {
+    -fx-background-color: #2563eb;
+}
+
+.button-export {
+    -fx-background-color: #10b981;
+}

@@ -1,0 +1,17 @@
+.header{
+  -fx-background-color: linear-gradient(to bottom right, #0f6789, #286155);
+}
+
+.nav-form{
+  -fx-background-color: linear-gradient(to bottom right, #0f6789, #286155);
+}
+
+.bg-white{
+  -fx-background-color:#fff;
+  -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,.3), 8, 0, 0, 0);
+  -fx-background-radius:8px;
+}
+
+.bg-white:hover{
+  -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 8, 0, 0, 0);
+}

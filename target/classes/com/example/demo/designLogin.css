@@ -1,0 +1,129 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/*
+    Created on : Apr 5, 2025, 3:51:38 AM
+    Author     : hp
+*/
+
+.bg-form{
+    -fx-background-color:linear-gradient(to top right, #1e242e, #ae2d3c);
+}
+
+.close{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+}
+
+.close:hover{
+    -fx-background-color:#ff5151;
+}
+
+.minimize{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+}
+
+.minimize:hover{
+    -fx-background-color:#c5273f;
+}
+
+.textfield{
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-text-fill: #fff;
+    -fx-prompt-text-fill: rgba(255, 255, 255, 0.7);
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-width: 0 0 1 0;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 8;
+    -fx-font-size: 14px;
+}
+
+.textfield:focused{
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-border-color: #fb6363;
+    -fx-border-width: 0 0 2 0;
+}
+
+.login-btn{
+    -fx-background-color: linear-gradient(to bottom right, #35529d, #2371d0);
+    -fx-background-radius: 25;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-padding: 10 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 5);
+}
+
+.login-btn:hover{
+    -fx-background-color: linear-gradient(to bottom right, #3862c2, #4284d0);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 15, 0, 0, 7);
+}
+
+.hyperlink{
+    -fx-underline:false;
+    -fx-text-fill: rgba(255, 255, 255, 0.8);
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-cursor: hand;
+    -fx-padding: 5;
+}
+
+.hyperlink:hover{
+    -fx-text-fill: #fb6363;
+}
+
+.login-link {
+    -fx-text-fill: rgba(255, 255, 255, 0.8);
+}
+
+.login-link:hover {
+    -fx-text-fill: #fb6363;
+}
+
+.signup-btn{
+    -fx-background-color: linear-gradient(to bottom right, #3e785c, #399a73);
+    -fx-background-radius: 25;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-padding: 10 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 5);
+}
+
+.signup-btn:hover{
+    -fx-background-color: linear-gradient(to bottom right, #4d9a76, #45b796);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 15, 0, 0, 7);
+}
+
+/* Alert Dialog Styling */
+.dialog-pane {
+    -fx-background-color: #1e242e;
+}
+
+.dialog-pane .label {
+    -fx-text-fill: white;
+}
+
+.dialog-pane:header .header-panel {
+    -fx-background-color: #ae2d3c;
+}
+
+.dialog-pane:header .header-panel .label {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+.dialog-pane .button {
+    -fx-background-color: #3e785c;
+    -fx-text-fill: white;
+    -fx-wrap-text: true;
+    -fx-cursor: hand;
+    -fx-background-radius: 5;
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: #45b796;
+}

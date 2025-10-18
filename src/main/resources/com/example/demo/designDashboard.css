@@ -1,0 +1,446 @@
+/*Dashboard*/
+
+.top-form{
+  -fx-background-color:#fff;
+  -fx-border-color:#000;
+  -fx-border-width:.4px .4px .2px .4px;
+}
+
+.close{
+  -fx-background-color:transparent;
+  -fx-cursor:hand;
+}
+
+.close:hover{
+  -fx-background-color:#e74141;
+}
+
+.minimize{
+  -fx-background-color:transparent;
+  -fx-cursor:hand;
+}
+
+.minimize:hover{
+  -fx-background-color:#dadada;
+}
+
+.nav-form{
+  -fx-background-color:linear-gradient(to bottom right, #8B1F41, #ae2d3c);
+  -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0);
+}
+
+.nav-btn{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-font-family: "Microsoft Sans Serif";
+    -fx-font-size: 14px;
+    -fx-text-fill: #fff;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 0 0 0 20px;
+}
+
+.nav-btn:hover{
+  -fx-background-color: linear-gradient(to right, rgba(255,255,255,0.1), transparent);
+  -fx-border-color: #fff;
+  -fx-border-width: 0 0 0 3px;
+}
+
+.signout{
+  -fx-background-color: #ae2d3c;
+  -fx-background-radius: 8px;
+  -fx-cursor: hand;
+}
+
+.signout:hover{
+  -fx-background-color: #d62651;
+}
+
+.bg-white{
+  -fx-background-color:#fff;
+  -fx-background-radius:8px;
+  -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 8, 0, 0, 0);
+}
+
+.bg-white:hover{
+  -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 8, 0, 0, 0);
+}
+
+.card1{
+  -fx-background-color:linear-gradient(to right, #2b428c, #2e58ab);
+  -fx-background-radius:0px 10px 10px 0px;
+}
+
+.card1-left{
+  -fx-background-color:linear-gradient(to right, #213778, #2b428c);
+}
+
+.card2{
+  -fx-background-color:linear-gradient(to right, #772d90, #a42fb8);
+  -fx-background-radius:0px 10px 10px 0px;
+}
+
+.card2-left{
+  -fx-background-color:linear-gradient(to right, #641f7f, #772d90);
+}
+
+.card3{
+  -fx-background-color:linear-gradient(to right, #9d2249, #cc1c5a);
+  -fx-background-radius:0px 10px 10px 0px;
+}
+
+.card3-left{
+  -fx-background-color:linear-gradient(to right, #891a41, #9d2249);
+}
+
+.card{
+  -fx-background-radius: 5px;
+  -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 0);
+}
+
+/* ADD MOVIES */
+.add-textfield{
+  -fx-background-color:#fff;
+  -fx-background-radius:0px 5px 0px 0px;
+  -fx-border-color:#1e242e;
+  -fx-border-width:.8px;
+  -fx-border-radius:0px 5px 0px 0px;
+}
+
+.add-textfield:focused{
+  -fx-border-color:#ae2d3c;
+  -fx-border-width:1.5px;
+}
+
+.insert-btn {
+  -fx-background-color:#3149a1;
+  -fx-background-radius:8px;
+  -fx-text-fill:#fff;
+  -fx-font-size:14px;
+  -fx-cursor: hand;
+}
+
+.insert-btn:hover{
+  -fx-background-color:#3c71c4;
+}
+
+.update-btn{
+  -fx-background-color:#337254;
+  -fx-background-radius:8px;
+  -fx-text-fill:#fff;
+  -fx-font-size:14px;
+  -fx-cursor:hand;
+}
+
+.update-btn:hover{
+  -fx-background-color:#3ea185;
+}
+.delete-btn{
+  -fx-background-color:#962934;
+  -fx-background-radius:8px;
+  -fx-text-fill:#fff;
+  -fx-font-size:14px;
+  -fx-cursor:hand;
+}
+
+
+.delete-btn:hover{
+  -fx-background-color:#d33d63;
+}
+
+.clear-btn{
+  -fx-background-color:#933b80;
+  -fx-background-radius:8px;
+  -fx-text-fill:#fff;
+  -fx-font-size:14px;
+  -fx-cursor:hand;
+}
+
+.clear-btn:hover{
+  -fx-background-color:#c242be;
+}
+
+.search{
+  -fx-background-color:#fff;
+  -fx-background-radius:0px 10px 0px 0px;
+  -fx-border-color:#1e242e;
+  -fx-border-width:1px;
+  -fx-font-size:14px;
+  -fx-border-radius:0px 10px 0px 0px;
+  -fx-padding: 0px 0px 0px 20px;
+}
+
+.search:focused{
+  -fx-border-color:#ae2d3c;
+  -fx-border-width:2px;
+}
+
+.table-view{
+  -fx-background-color:#fff;
+  -fx-background-radius:10px;
+  -fx-border-color:#ac2d3c;
+  -fx-border-radius:10px;
+  -fx-fill:#fff;
+  -fx-padding:0px;
+}
+
+.table-view .column-header-background{
+  -fx-background-color: linear-gradient(to top left, #1e242e, #ae2d3c);
+  -fx-background-insets: 0 0 0 0;
+  -fx-background-radius: 10px 10px 0px 0px;
+}
+
+.table-view .column-header, .table-view .filler {
+  -fx-background-color:transparent;
+  -fx-size:50px;
+  -fx-fill:#fff;
+}
+
+.table-view .column-header .label{
+  -fx-text-fill:#fff;
+}
+
+/*available movies*/
+.info-card{
+  -fx-border-color:#ae2d3c;
+  -fx-border-radius:10px 0px 0px 10px;
+}
+
+.label-info{
+  -fx-border-color:#ae2d3c;
+  -fx-border-radius:0px 5px 0px 0px;
+  -fx-border-width:.8px;
+  -fx-padding:5px;
+  -fx-font-size:14px;
+}
+
+.spinner{
+  -fx-background-color:#fff;
+  -fx-border-color:#000;
+  -fx-border-width:.8px;
+}
+
+.buy-btn{
+  -fx-background-color:#2d7778;
+  -fx-text-fill:#fff;
+  -fx-font-size:14px;
+  -fx-background-radius:8px;
+  -fx-cursor:hand;
+}
+
+.buy-btn:hover{
+  -fx-background-color:#3babb5;
+}
+
+.receipt-btn{
+  -fx-background-color:#937729;
+  -fx-text-fill:#fff;
+  -fx-font-size:14px;
+  -fx-background-radius:8px;
+  -fx-cursor:hand;
+}
+
+.receipt-btn:hover{
+  -fx-background-color:#d39948;
+}
+
+/*Edit Screening*/
+.combo-box{
+  -fx-background-color:#fff;
+  -fx-background-radius:5px;
+  -fx-border-color:#1e242e;
+  -fx-border-width:.5px;
+  -fx-border-radius:5px;
+}
+
+.combo-box:focused{
+  -fx-border-color:#ae2d3c;
+  -fx-border-width:1px;
+}
+
+/*Customer*/
+.card-customer{
+  -fx-background-color:#fff;
+  -fx-background-radius:5px;
+  -fx-border-color:#ae2d3c;
+  -fx-border-width:.8px;
+  -fx-border-radius:5px;
+}
+
+.pay-btn{
+  -fx-background-color: linear-gradient(to bottom right, #098c53, #246861);
+  -fx-background-radius: 5px;
+  -fx-cursor: hand;
+  -fx-text-fill: #fff;
+  -fx-font-size: 14px;
+}
+
+.pay-btn:hover{
+  -fx-background-color: linear-gradient(to bottom right, #0fb565, #399a8f);
+}
+
+.remove-btn{
+  -fx-background-color:#C0392B; /* A strong, deep crimson */
+  -fx-text-fill:#fff;
+  -fx-font-size:14px;
+  -fx-background-radius:8px;
+  -fx-cursor:hand;
+}
+
+.remove-btn:hover{
+  -fx-background-color:#E74C3C; /* A slightly brighter shade for hover */
+}
+
+.receipt-btn {
+  -fx-background-color: #3F51B5; /* Deep Royal Blue */
+  -fx-background-radius: 8px;
+  -fx-text-fill: #ffffff;
+  -fx-font-size: 14px;
+  -fx-cursor: hand;
+}
+
+.receipt-btn:hover {
+  -fx-background-color: #7C4DFF; /* Vibrant Violet */
+}
+
+.chat-btn {
+  -fx-background-color: #42A5F5; /* Calm Sky Blue */
+  -fx-background-radius: 10px;
+  -fx-text-fill: #ffffff;
+  -fx-font-size: 14px;
+  -fx-font-weight: bold;
+  -fx-padding: 6 14 6 14;
+  -fx-cursor: hand;
+  -fx-effect: dropshadow(one-pass-box, rgba(0, 0, 0, 0.15), 3, 0, 0, 1);
+}
+
+.chat-btn:hover {
+  -fx-background-color: #B39DDB; /* Soft Lavender */
+}
+
+.movie-box {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+    -fx-background-radius: 5;
+}
+
+.movie-box:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 15, 0, 0, 0);
+    -fx-translate-y: -2;
+}
+
+.buy-button {
+    -fx-background-color: #2d3436;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16;
+    -fx-background-radius: 5;
+}
+
+.buy-button:hover {
+    -fx-background-color: #636e72;
+}
+
+.buy-button:disabled {
+    -fx-background-color: #b2bec3;
+    -fx-text-fill: #636e72;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.tab-pane {
+    -fx-background-color: transparent;
+}
+
+.tab {
+    -fx-background-color: #2d3436;
+    -fx-text-fill: white;
+}
+
+.tab:selected {
+    -fx-background-color: #636e72;
+}
+
+.tab .tab-label {
+    -fx-text-fill: white;
+}
+
+.movie-slider-container {
+    -fx-background-color: transparent;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+}
+
+.slider-button {
+    -fx-background-color: #a71d37;
+    -fx-background-radius: 20px;
+    -fx-cursor: hand;
+}
+
+.slider-button:hover {
+    -fx-background-color: #8a1830;
+}
+
+.movie-title {
+    -fx-text-fill: #333333;
+    -fx-font-weight: bold;
+}
+
+.header-label {
+    -fx-text-fill: #333333;
+    -fx-font-weight: bold;
+}
+
+/* Customer Panel Menu Styles */
+.welcome-text {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 4, 0, 0, 0);
+}
+
+.username-text {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 4, 0, 0, 0);
+}
+
+.menu-button {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-background-radius: 10;
+    -fx-padding: 10 15;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 0);
+}
+
+.menu-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-translate-x: 3;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 8, 0, 0, 0);
+}
+
+.menu-button:pressed {
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+    -fx-translate-x: 1;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 3, 0, 0, 0);
+}
+
+.signout-button {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-background-radius: 10;
+    -fx-padding: 10 15;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 0);
+}
+
+.signout-button:hover {
+    -fx-background-color: rgba(220, 53, 69, 0.8);
+    -fx-translate-x: 3;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 8, 0, 0, 0);
+}
+
+.signout-button:pressed {
+    -fx-background-color: rgba(220, 53, 69, 1);
+    -fx-translate-x: 1;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 3, 0, 0, 0);
+}

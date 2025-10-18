@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.CustomerHistoryController">
+   <children>
+      <BorderPane layoutX="318.0" layoutY="-20.0" prefHeight="700.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-20.0">
+         <top>
+            <AnchorPane prefHeight="68.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutY="3.0" prefHeight="62.0" prefWidth="1200.0" styleClass="top-form" stylesheets="@designDashboard.css">
+                     <children>
+                        <Label layoutX="33.0" layoutY="22.0" text="Movie Ticket Booking System - Purchase History">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="13.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="19.0" fitWidth="17.0" layoutX="14.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@PauseButtonIcon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="632.0" prefWidth="250.0" styleClass="nav-form" stylesheets="@designDashboard.css" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox spacing="10" alignment="TOP_CENTER">
+                     <padding>
+                        <Insets top="20" right="20" bottom="20" left="20"/>
+                     </padding>
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@dashimage.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Welcome" textFill="#faf5f5" styleClass="welcome-text">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10"/>
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="username" alignment="CENTER" prefWidth="200.0" textFill="#f4f2f2" styleClass="username-text">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="30"/>
+                           </VBox.margin>
+                        </Label>
+                        
+                        <Button mnemonicParsing="false" onAction="#handleCustomerDashboardBtn" styleClass="menu-button" prefHeight="50.0" prefWidth="200.0">
+                           <graphic>
+                              <HBox spacing="15" alignment="CENTER_LEFT">
+                                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                       <Image url="@dashboard.png" />
+                                    </image>
+                                 </ImageView>
+                                 <Label text="Dashboard" textFill="WHITE">
+                                    <font>
+                                       <Font name="System Bold" size="16.0" />
+                                    </font>
+                                 </Label>
+                              </HBox>
+                           </graphic>
+                        </Button>
+                        
+                        <Button mnemonicParsing="false" onAction="#handleCustomerHistoryBtn" styleClass="menu-button" prefHeight="50.0" prefWidth="200.0">
+                           <graphic>
+                              <HBox spacing="15" alignment="CENTER_LEFT">
+                                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                       <Image url="@scroll.png" />
+                                    </image>
+                                 </ImageView>
+                                 <Label text="History" textFill="WHITE">
+                                    <font>
+                                       <Font name="System Bold" size="16.0" />
+                                    </font>
+                                 </Label>
+                              </HBox>
+                           </graphic>
+                        </Button>
+                        
+                        <Button mnemonicParsing="false" onAction="#handleChatBtn" styleClass="menu-button" prefHeight="50.0" prefWidth="200.0">
+                           <graphic>
+                              <HBox spacing="15" alignment="CENTER_LEFT">
+                                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                       <Image url="@speech-bubble.png" />
+                                    </image>
+                                 </ImageView>
+                                 <Label text="Chat" textFill="WHITE">
+                                    <font>
+                                       <Font name="System Bold" size="16.0" />
+                                    </font>
+                                 </Label>
+                              </HBox>
+                           </graphic>
+                        </Button>
+                        
+                        <Region VBox.vgrow="ALWAYS" />
+                        
+                        <Button mnemonicParsing="false" onAction="#handleSignoutBtn" styleClass="signout-button" prefHeight="50.0" prefWidth="200.0">
+                           <graphic>
+                              <HBox spacing="15" alignment="CENTER_LEFT">
+                                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                       <Image url="@exit.png" />
+                                    </image>
+                                 </ImageView>
+                                 <Label text="Sign Out" textFill="WHITE">
+                                    <font>
+                                       <Font name="System Bold" size="16.0" />
+                                    </font>
+                                 </Label>
+                              </HBox>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="632.0" prefWidth="950.0" styleClass="content-area">
+               <children>
+                  <Label layoutX="20.0" layoutY="20.0" text="Purchase History">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="historyTable" layoutX="20.0" layoutY="60.0" prefHeight="520.0" prefWidth="910.0" styleClass="table-view">
+                    <columns>
+                      <TableColumn fx:id="dateColumn" prefWidth="150.0" text="Date" />
+                      <TableColumn fx:id="movieColumn" prefWidth="200.0" text="Movie" />
+                      <TableColumn fx:id="screeningColumn" prefWidth="150.0" text="Screening" />
+                      <TableColumn fx:id="seatsColumn" prefWidth="150.0" text="Seats" />
+                      <TableColumn fx:id="amountColumn" prefWidth="100.0" text="Amount" />
+                      <TableColumn fx:id="statusColumn" prefWidth="100.0" text="Status" />
+                      <TableColumn fx:id="actionsColumn" prefWidth="220.0" text="Actions" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane> 

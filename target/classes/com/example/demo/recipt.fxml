@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="204.0" prefWidth="528.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.ReceiptController">
+   <children>
+   
+                      <!-- Movie Poster -->
+       <ImageView fx:id="posterImageView" fitHeight="222.0" fitWidth="166.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0.5, 0, 2); -fx-background-radius: 12;">
+           <image>
+               <Image url="@Shang-Chi_and_the_Legend_of_the_Ten_Rings_poster.jpeg" />
+           </image>
+       </ImageView>
+   
+                      <!-- Ticket Info Area -->
+       <AnchorPane layoutX="149.0" prefHeight="222.0" prefWidth="373.0" style="-fx-border-style: dotted; -fx-background-color: #FFFCF9; -fx-border-width: 0 4 0 0; -fx-background-radius: 0 12 12 0;">
+           <children>
+               <VBox layoutX="14" layoutY="14" spacing="6">
+                   <Label fx:id="titleLabel" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #ff7e5f;" text="Movie Title, Format" />
+   
+                                  <HBox spacing="24">
+                       <VBox spacing="4">
+                           <Label style="-fx-font-size: 11px; -fx-text-fill: #bb6f56;" text="DATE:" />
+                           <Label fx:id="dateLabel" style="-fx-font-size: 14px; -fx-text-fill: #663c2f;" text="Date" />
+                       </VBox>
+                       <VBox spacing="4">
+                           <Label style="-fx-font-size: 11px; -fx-text-fill: #bb6f56;" text="TIME:" />
+                           <Label fx:id="timeLabel" style="-fx-font-size: 14px; -fx-text-fill: #663c2f;" text="Time" />
+                       </VBox>
+                       <VBox spacing="4">
+                           <Label style="-fx-font-size: 11px; -fx-text-fill: #bb6f56;" text="PRICE:" />
+                     <HBox>
+                        <children>
+                           <Label fx:id="priceLabel" style="-fx-font-size: 14px; -fx-text-fill: #ff7e5f; -fx-font-weight: bold;" text="400" />
+                        </children>
+                     </HBox>
+                       </VBox>
+                   </HBox>
+   
+                                  <HBox spacing="24">
+                       <VBox spacing="4">
+                           <Label style="-fx-font-size: 11px; -fx-text-fill: #bb6f56;" text="HALL" />
+                           <Label fx:id="hallLabel" style="-fx-font-size: 14px; -fx-text-fill: #663c2f;" text="Hall" />
+                       </VBox>
+                       <VBox spacing="4">
+                           <Label style="-fx-font-size: 11px; -fx-text-fill: #bb6f56;" text="ROW" />
+                           <Label fx:id="rowLabel" style="-fx-font-size: 14px; -fx-text-fill: #663c2f;" text="Row" />
+                       </VBox>
+                       <VBox spacing="4">
+                           <Label style="-fx-font-size: 11px; -fx-text-fill: #bb6f56;" text="SEAT" />
+                           <Label fx:id="seatLabel" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #663c2f;" text="Seats" />
+                       </VBox>
+                   </HBox>
+   
+                                  <Label fx:id="classLabel" style="-fx-font-size: 13px; -fx-text-fill: #663c2f;" text="ADULTS 2" />
+                   <Label fx:id="locationLabel" style="-fx-font-size: 11px; -fx-text-fill: #663c2f;" text="Location Text" />
+               </VBox>
+            <ImageView fx:id="qrImageView" fitHeight="125.0" fitWidth="130.0" layoutX="222.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@QR_code_for_mobile_English_Wikipedia.svg.png" />
+               </image>
+            </ImageView>
+           </children>
+       </AnchorPane>
+   </children>
+</AnchorPane>

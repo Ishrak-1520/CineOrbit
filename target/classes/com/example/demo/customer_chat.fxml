@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.effect.ColorAdjust?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.CustomerChatController">
+   <children>
+      <BorderPane layoutX="318.0" layoutY="-20.0" prefHeight="700.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-20.0">
+         <top>
+            <AnchorPane prefHeight="68.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutY="3.0" prefHeight="62.0" prefWidth="1200.0" styleClass="top-form" stylesheets="@designDashboard.css">
+                     <children>
+                        <Label layoutX="33.0" layoutY="22.0" text="Movie Ticket Booking System - Customer Support">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="13.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="19.0" fitWidth="17.0" layoutX="14.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@PauseButtonIcon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="632.0" prefWidth="250.0" styleClass="nav-form" stylesheets="@designDashboard.css" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="TOP_CENTER" spacing="10">
+                     <padding>
+                        <Insets bottom="20" left="20" right="20" top="20" />
+                     </padding>
+                     <children>
+                        <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@dashimage.png" />
+                           </image>
+                        </ImageView>
+                        <Label styleClass="welcome-text" text="Welcome" textFill="#faf5f5">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="username1" alignment="CENTER" prefWidth="200.0" styleClass="username-text" text="username" textFill="#f4f2f2">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="30" />
+                           </VBox.margin>
+                        </Label>
+                        
+                        <Button mnemonicParsing="false" onAction="#handleCustomerDashboardBtn" prefHeight="50.0" prefWidth="200.0" styleClass="menu-button">
+                           <graphic>
+                              <HBox alignment="CENTER_LEFT" spacing="15">
+                                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                       <Image url="@dashboard.png" />
+                                    </image>
+                                 </ImageView>
+                                 <Label text="Dashboard" textFill="WHITE">
+                                    <font>
+                                       <Font name="System Bold" size="16.0" />
+                                    </font>
+                                 </Label>
+                              </HBox>
+                           </graphic>
+                        </Button>
+                        
+                        <Button mnemonicParsing="false" onAction="#handleCustomerHistoryBtn" prefHeight="50.0" prefWidth="200.0" styleClass="menu-button">
+                           <graphic>
+                              <HBox alignment="CENTER_LEFT" spacing="15">
+                                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                       <Image url="@scroll.png" />
+                                    </image>
+                                 </ImageView>
+                                 <Label text="History" textFill="WHITE">
+                                    <font>
+                                       <Font name="System Bold" size="16.0" />
+                                    </font>
+                                 </Label>
+                              </HBox>
+                           </graphic>
+                        </Button>
+                        
+                        <Button mnemonicParsing="false" onAction="#handleChatBtn" prefHeight="50.0" prefWidth="200.0" styleClass="menu-button">
+                           <graphic>
+                              <HBox alignment="CENTER_LEFT" spacing="15">
+                                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                       <Image url="@speech-bubble.png" />
+                                    </image>
+                                 </ImageView>
+                                 <Label text="Chat" textFill="WHITE">
+                                    <font>
+                                       <Font name="System Bold" size="16.0" />
+                                    </font>
+                                 </Label>
+                              </HBox>
+                           </graphic>
+                        </Button>
+                        
+                        <Region VBox.vgrow="ALWAYS" />
+                        
+                        <Button mnemonicParsing="false" onAction="#handleSignoutBtn" prefHeight="50.0" prefWidth="200.0" styleClass="signout-button">
+                           <graphic>
+                              <HBox alignment="CENTER_LEFT" spacing="15">
+                                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                       <Image url="@exit.png" />
+                                    </image>
+                                 </ImageView>
+                                 <Label text="Sign Out" textFill="WHITE">
+                                    <font>
+                                       <Font name="System Bold" size="16.0" />
+                                    </font>
+                                 </Label>
+                              </HBox>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <BorderPane styleClass="chat-main-container" stylesheets="@chat.css">
+               <center>
+                  <VBox spacing="10.0" styleClass="chat-container">
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </padding>
+                     <children>
+                        <Label text="Chat with Support" textFill="#2c3e50">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox alignment="CENTER" spacing="10.0" styleClass="status-bar">
+                           <children>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@PauseButtonIcon.png" />
+                                 </image>
+                                 <effect>
+                                    <ColorAdjust brightness="0.3" hue="0.3" saturation="0.7" />
+                                 </effect>
+                              </ImageView>
+                              <Label text="Support is online" textFill="#2ecc71">
+                                 <font>
+                                    <Font name="System" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <TextArea fx:id="chatArea" editable="false" styleClass="chat-area" wrapText="true" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                        </TextArea>
+                        <VBox spacing="5.0" styleClass="input-container">
+                           <children>
+                              <HBox alignment="CENTER" spacing="10.0" styleClass="message-box">
+                                 <children>
+                                    <TextField fx:id="messageField" onAction="#handleSendMessage" promptText="Type your message here..." styleClass="message-field" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Segoe UI" size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <Button mnemonicParsing="false" onAction="#handleSendMessage" styleClass="send-button">
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@send_icon.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </HBox>
+                              <Label styleClass="hint-text" text="Press Enter to send">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </center>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
